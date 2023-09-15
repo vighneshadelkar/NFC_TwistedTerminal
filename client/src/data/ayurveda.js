@@ -15,7 +15,8 @@ const data = [
             "Antioxidant",
             "Analgesic"
         ],
-        "IntegrationWithModernMedicine": "Turmeric can be used as a supplement alongside anti-arthritis medications for enhanced results. Nonsteroidal anti-inflammatory drugs (NSAIDs) can also be used for pain relief."
+        "IntegrationWithModernMedicine": "Turmeric can be used as a supplement alongside anti-arthritis medications for enhanced results. Nonsteroidal anti-inflammatory drugs (NSAIDs) can also be used for pain relief.",
+        "ImagePath":"../../../public/item1.jpg"
     },
     {
         "Name": "Asthma",
@@ -36,6 +37,8 @@ const data = [
             "Vasaka helps in respiratory conditions and acts as an expectorant"
         ],
         "IntegrationWithModernMedicine": "Bronchodilators, corticosteroids, and other prescribed asthma medications can be used alongside Ayurvedic remedies for asthma management."
+        ,
+        "ImagePath":"../images/item1"
     },
     {
         "Name": "Hypertension",
@@ -56,6 +59,8 @@ const data = [
             "Amla is rich in vitamin C and supports heart health"
         ],
         "IntegrationWithModernMedicine": "Antihypertensive medications like ACE inhibitors and diuretics can be used alongside Ayurvedic remedies for blood pressure management."
+        ,
+        "ImagePath":"../images/item1"
     },
     {
         "Name": "Diabetes",
@@ -76,6 +81,8 @@ const data = [
             "Cinnamon may enhance insulin function"
         ],
         "IntegrationWithModernMedicine": "Insulin or oral antidiabetic medications prescribed by a healthcare provider should be used alongside Ayurvedic remedies for diabetes management."
+        ,
+        "ImagePath":"../images/item1"
     },
     {
         "Name": "Digestive Disorders",
@@ -97,6 +104,8 @@ const data = [
             "Ajwain helps relieve gas and indigestion"
         ],
         "IntegrationWithModernMedicine": "Proton pump inhibitors (PPIs) and antacids can be used alongside Ayurvedic remedies for digestive relief."
+        ,
+        "ImagePath":"../images/item1"
     },
     {
         "Name": "Migraines",
@@ -117,6 +126,8 @@ const data = [
             "Shirodhara relaxes the nervous system and relieves headaches"
         ],
         "IntegrationWithModernMedicine": "Triptans and nonsteroidal anti-inflammatory drugs (NSAIDs) can be used alongside Ayurvedic remedies for migraine relief."
+        ,
+        "ImagePath":"../images/item1"
     },
     {
         "Name": "Depression",
@@ -137,6 +148,8 @@ const data = [
             "Meditation and yoga promote mental well-being and reduce stress"
         ],
         "IntegrationWithModernMedicine": "Selective serotonin reuptake inhibitors (SSRIs) or other antidepressant medications prescribed by a healthcare provider should be used alongside Ayurvedic remedies for depression management."
+        ,
+        "ImagePath":"../images/item1"
     },
     {
         "Name": "Anxiety",
@@ -158,6 +171,8 @@ const data = [
             "Meditation and deep breathing promote relaxation"
         ],
         "IntegrationWithModernMedicine": "Selective serotonin reuptake inhibitors (SSRIs) and anxiolytic medications can be used alongside Ayurvedic remedies for anxiety management."
+        ,
+        "ImagePath":"../images/item1"
     },
     {
         "Name": "Insomnia",

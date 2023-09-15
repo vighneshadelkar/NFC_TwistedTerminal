@@ -18,6 +18,7 @@ const Card1 = ({ item, handleClick, isSelected }) => {
             <h3>Generic Med: {item?.IntegrationWithModernMedicine}</h3>
           <hr></hr>
         </div>
+      <img src="../../images/item1.jpg" alt={item?.Name} /> 
       </div>
     </div>
   );
