@@ -4,12 +4,20 @@
     width: 100%;  
     padding: 10px;
     opacity: 1;
-    margin-top: 90px;
+    margin-top: 80px;
 }
 
+.homeimg{
+    border-radius: 20px;
+    max-width: 100%;
+}
 .homeSection1{
     display: flex;
-    background-color: rgb(242,254,251);
+    /* background-color: rgb(242,254,251); */
+    background-image: url("../../images/homepg.avif");
+    height: 35rem;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .imgDiv{

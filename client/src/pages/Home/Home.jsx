@@ -1,5 +1,6 @@
 import React from "react";
 import Homeimg from "../../images/home-img.jpg";
+import Img1 from "../../images/login-img.jpg"
 import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
@@ -17,7 +18,7 @@ export default function Home() {
             <button className="explore">Explore More</button>
           </div>
           <div className="imgDiv">
-            <img src={Homeimg} alt="home img" />
+            {/* <img src={Img1} alt="home img" className="homeimg"/> */}
           </div>
         </section>
         <section className="homeSection2">
