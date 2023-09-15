@@ -16,7 +16,7 @@ export default function Home() {
         <section className="homeSection1">
           <div className="homeText">
             <h1 className="homeTitle">
-              Overall Wellness through ayurveda <br></br>is our muse
+            Unlocking Ancient Wisdom, Nurturing Modern Wellness: Your Ayurvedic Journey Begins Here!
             </h1>
             <button className="explore">Explore More</button>
           </div>
@@ -59,7 +59,7 @@ export default function Home() {
                     In Ayurveda, food is considered medicine, and a balanced
                     diet tailored to your dosha composition is crucial for
                     maintaining health and vitality. This section delves into
-                    the principles of Ayurvedic nutrition, offering guidance on
+                    the principles of Ayurvedia, offering guidance on
                     selecting foods that align with your dosha.
                   </p>
                 </div>
@@ -71,9 +71,9 @@ export default function Home() {
           <div className="cdWrapper">
             <h1 className="homeTitle">Blogs</h1>
             <div className="cdWrapper2">
-              <Blogcard image={Person2} />
-              <Blogcard image={Person1} />
-              <Blogcard image={Person3} />
+              <Blogcard image={Person2} name={"Priya"}/>
+              <Blogcard image={Person1} name={"Vighnesh"}/>
+              <Blogcard image={Person3} name={"Abuzaid"}/>
             </div>
           </div>
         </section>

@@ -22,7 +22,7 @@ export default function Blogcard(props) {
           individuals to cultivate health and vitality."
           <div className="author">
             {" "}
-            By <span className="name">Abi</span> 4 days ago
+            By <span className="name">{props.name}</span> 4 days ago
           </div>
         </div>
       </div>
