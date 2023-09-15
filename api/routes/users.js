@@ -115,4 +115,3 @@ Authrouter.post('/login', async (req, res) => {
     }
 })
 
-module.exports=Authrouter;

@@ -2,6 +2,7 @@ import React from "react";
 import "./Video.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import Chatbot from "../../components/Chatbot/Chatbot";
 
 export default function Video() {
   return (
@@ -58,6 +59,7 @@ export default function Video() {
         </div>
         <br></br>
         <br></br>
+        <Chatbot/>
       </div>
       <footer>
         <Footer/>

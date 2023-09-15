@@ -4,10 +4,13 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv').config();
 const router=require('./routes/users');
-const Authrouter=require('./routes/auth')
+const Authrouter=require('./routes/auth');
+const Chatbot=require('./routes/chatbot');
 const cookieParser = require('cookie-parser');
 const PORT=process.env.PORT || 4000;
 const DATABASE_URL=process.env.DATABASE_URL;
+global.AbortController = require('abort-controller').AbortController;
+
 
 // middleware
 app.use(express.json());
@@ -15,7 +18,7 @@ app.use(cors());
 app.use(cookieParser());
 app.use('/',router);
 app.use('/auth',Authrouter);
-
+app.use('/chatbot',Chatbot);
 
 mongoose.connect(DATABASE_URL, { useNewUrlParser: true });
 
@@ -32,6 +35,7 @@ db.once('open',()=>{
 app.get('/', (req, res) => {
     res.send('hello');
 })
+
 
 app.listen(PORT, () => {
     console.log('database at port: ', PORT);
