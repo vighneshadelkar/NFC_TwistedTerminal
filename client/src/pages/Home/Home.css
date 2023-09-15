@@ -14,8 +14,8 @@
 .homeSection1{
     display: flex;
     /* background-color: rgb(242,254,251); */
-    background-image: url("../../images/homepg.avif");
-    height: 33rem;
+    background-image: url("../../images/homepg.jpg");
+    height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -34,6 +34,7 @@
 
 .homeTitle{
     font-size: 50px;
+    font-weight:900px;
     font-family: 'Barlow Condensed', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Titillium Web', sans-serif;

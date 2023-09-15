@@ -18,7 +18,7 @@ export default function Home() {
             <h1 className="homeTitle">
             Unlocking Ancient Wisdom, Nurturing Modern Wellness: Your Ayurvedic Journey Begins Here!
             </h1>
-            <button className="explore">Explore More</button>
+            {/* <button className="explore">Explore More</button> */}
           </div>
           <div className="imgDiv">
             {/* <img src={Img1} alt="home img" className="homeimg"/> */}
