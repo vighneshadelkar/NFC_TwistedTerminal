@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Roboto&family=Titillium+Web:wght@200&display=swap');
 
 .home{
-    width: 100%;
-    background-color: rgb(242,254,251);
+    width: 100%;  
     padding: 10px;
     opacity: 1;
-    margin-top: 100px;
+    margin-top: 90px;
 }
 
-.homeSection{
+.homeSection1{
     display: flex;
+    background-color: rgb(242,254,251);
 }
 
 .imgDiv{
@@ -23,8 +23,8 @@
 .homeTitle{
     font-size: 50px;
     font-family: 'Barlow Condensed', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Titillium Web', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .homeText{
@@ -39,4 +39,19 @@ font-family: 'Titillium Web', sans-serif;
     font-size: larger;
     color: white;
     border-radius: 15px;
+}
+
+.cdWrapper2{
+    display: flex;
+    gap: 30px;
+    width: 70%;
+}
+.cdWrapper{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
 }
