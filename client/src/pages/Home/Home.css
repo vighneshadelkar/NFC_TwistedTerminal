@@ -20,6 +20,10 @@
     background-repeat: no-repeat;
 }
 
+.homeSection3{
+    width: 100%;
+}
+
 .imgDiv{
     object-fit: cover;
     display: flex;

@@ -1,10 +1,12 @@
 import React from "react";
-import Homeimg from "../../images/home-img.jpg";
-import Img1 from "../../images/login-img.jpg";
-import Arrow from "../../images/arrow.png"
+import Person1 from "../../images/person1.jpg";
+import Person2 from "../../images/person2.jpg";
+import Person3 from "../../images/person3.jpg";
+import Arrow from "../../images/arrow.png";
 import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import Blogcard from "../../components/Card/Blogcard";
 
 export default function Home() {
   return (
@@ -23,8 +25,8 @@ export default function Home() {
           </div>
         </section>
         <div className="imgDiv">
-            <img src={Arrow} alt="" />
-          </div>
+          <img src={Arrow} alt="" />
+        </div>
         <section className="homeSection2" data-aos="zoom-in">
           <div className="wrapper">
             <div className="cdWrapper">
@@ -62,6 +64,16 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+        <section className="homeSection3">
+          <div className="cdWrapper">
+            <h1 className="homeTitle">Blogs</h1>
+            <div className="cdWrapper2">
+              <Blogcard image={Person2} />
+              <Blogcard image={Person1} />
+              <Blogcard image={Person3} />
             </div>
           </div>
         </section>
