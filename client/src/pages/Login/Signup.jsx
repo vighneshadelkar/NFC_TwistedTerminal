@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import loginimg from "../../images/login-img.jpg";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
-import "./Login.css";
+import "./Signup.css";
 
 export default function Signup() {
   const navigate = useNavigate();
@@ -76,6 +76,61 @@ export default function Signup() {
                 name="firstname"
                 value={registerData.firstname}
                 onChange={handleInput}
+                placeholder="Firstname"
+                required
+              />
+              <span>
+                <svg
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+            <div className="input-container">
+              <input
+                type="text"
+                className="signupItem"
+                id="signupFirstname"
+                name="lastname"
+                value={registerData.lastname}
+                onChange={handleInput}
+                placeholder="Lastname"
+                required
+              />
+              <span>
+                <svg
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+            <div className="input-container">
+              <input
+                type="email"
+                className="signupItem"
+                id="signupEmail"
+                name="email"
+                placeholder="Email"
+                value={registerData.email}
+                onChange={handleInput}
                 required
               />
               <span>
@@ -100,7 +155,7 @@ export default function Signup() {
                 className="signupItem"
                 id="signupPass"
                 name="password"
-                value={loginData.password}
+                value={registerData.password}
                 placeholder="Password"
                 onChange={handleInput}
                 required

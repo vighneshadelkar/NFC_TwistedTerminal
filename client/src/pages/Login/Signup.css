@@ -19,15 +19,15 @@
 }
 
 .formContainer{
-  flex: 5;
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  height: fit-content;
-  margin-top: 12vh;
-  gap: 10px;
+    flex: 5;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: fit-content;
+    margin-top: 12vh;
+    gap: 10px;
 }
 
 .login-img{
