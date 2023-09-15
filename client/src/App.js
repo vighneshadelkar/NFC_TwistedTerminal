@@ -7,6 +7,7 @@ import Login from "./pages/Login/Login";
 import { AuthContext } from "./context/AuthContext";
 import Signup from "./pages/Login/Signup";
 import Education from "./pages/Education/Education";
+import Video from "./pages/Videopg/Video";
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
             <Route exact path="/login" element={<Login />}></Route>
             <Route exact path="/signup" element={<Signup />}></Route>
             <Route exact path="/edu" element={<Education />}></Route>
+            <Route exact path="/videos" element={<Video />}></Route>
           </Routes>
         </BrowserRouter>
       </AuthContext.Provider>

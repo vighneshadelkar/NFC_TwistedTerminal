@@ -1,7 +1,6 @@
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import logo from "./logo2.png";
-import { Helmet } from "react-helmet";
 
 export default function Navbar() {
   return (
@@ -21,6 +20,9 @@ export default function Navbar() {
         </li>
         <li>
           <NavLink to="/edu">History</NavLink>
+        </li>
+        <li>
+          <NavLink to="/videos">Videos</NavLink>
         </li>
         <li>
           <NavLink to="https://abhinavgajria.github.io/ayurvedicquiz/">

@@ -1,0 +1,25 @@
+.videoContainer{
+    margin-top: 100px;
+}
+
+.videoWrapper{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97%;
+    flex-direction: column;
+}
+
+iframe{
+    border-radius: 20px;
+}
+
+.videos{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
