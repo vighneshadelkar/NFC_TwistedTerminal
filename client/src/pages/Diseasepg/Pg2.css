@@ -1,7 +1,13 @@
 .pg2{
     width: 100%;
 }
-
 .pg2Wrapper{
     display: flex;
+}
+.cardsDiv{
+    display: flex;
+    flex: 6;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* justify-content: space-around;  */
 }
