@@ -5,6 +5,7 @@ import products from "../../data/products";
 import Search from "../../components/Search/Search";
 import Rightbar from "../../components/Rightbar/Rightbar"
 import "./Product.css";
+import Chatbot from "../../components/Chatbot/Chatbot";
 
 export default function Products() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -39,6 +40,7 @@ export default function Products() {
         <Search handleSearch={handleSearch} />
 
         <div className="cardsDiv1">
+          <Chatbot/>
           <div className="cardsDiv">
             {searchTerm.length === 0
               ? renderCards(products)

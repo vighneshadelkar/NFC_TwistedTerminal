@@ -3,17 +3,17 @@ const app = express();
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv').config();
-const router=require('./routes/users');
+const router=require('./routes/auth');
 const Authrouter=require('./routes/auth');
-const Chatbot=require('./routes/chatbot');
 const cookieParser = require('cookie-parser');
 const PORT=process.env.PORT || 4000;
+const Chatbot=require('./routes/chatbot');
+const bodyParser = require("body-parser");
 const DATABASE_URL=process.env.DATABASE_URL;
-global.AbortController = require('abort-controller').AbortController;
-
 
 // middleware
 app.use(express.json());
+app.use(bodyParser.json());
 app.use(cors());
 app.use(cookieParser());
 app.use('/',router);
