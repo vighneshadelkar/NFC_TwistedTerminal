@@ -3,10 +3,10 @@ import "./Search.css"
 
 const Search= ({ handleSearch }) => {
   return (
-    <div>
+    <div className="sear">
       <input
         type="text"
-        placeholder="Search..."
+        placeholder="Disease..."
         onChange={(e) => handleSearch(e.target.value)}
         className='search'
       />

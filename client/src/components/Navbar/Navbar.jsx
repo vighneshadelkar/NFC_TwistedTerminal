@@ -1,10 +1,17 @@
 import "./Navbar.css"
 import { NavLink } from "react-router-dom"
-import logo from "./mainlogo.jpg"
+import logo from "./logo2.png"
+import { Helmet } from "react-helmet"
 
 export default function Navbar() {
   return (
     <nav className="navbar">
+       <Helmet>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+        />
+      </Helmet>
     <ul className="navbar-links">
       <li>
         <NavLink to="/">Home</NavLink>

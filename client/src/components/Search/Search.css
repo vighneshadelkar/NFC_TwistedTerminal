@@ -1,10 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+
 .search{
-    background-color: #fff;
+  background-color: #c6f7df;
   padding: 1rem;
   padding-right: 3rem;
-  font-size: 0.875rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
   line-height: 1.25rem;
   width: 300px;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  color: #327e5e;
+  font-family: Poppins;
+}
+input{
+  color: #327e5e;
+}
+.sear{
+  color: #327e5e;
 }
