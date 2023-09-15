@@ -1,9 +1,30 @@
 import React from "react";
 import "./Card1.css";
+import item1 from "../../images/item1.jpg"
+import item2 from "../../images/item2.jpg"
+import item3 from "../../images/item3.jpg"
+import item4 from "../../images/item4.jpg"
+import item5 from "../../images/item5.jpg"
+import item6 from "../../images/item6.jpg"
+import item7 from "../../images/item7.jpg"
+import item8 from "../../images/item8.jpg"
 
 
 const Card1 = ({ item, handleClick, isSelected }) => {
+  const imageMap = {
+    item1,
+    item2,
+    item3,
+    item4,
+    item5,
+    item6,
+    item7,
+    item8
+  };
+
+  console.log(item.ImagePath)
   const cardClassName = `cardContainer ${isSelected ? "selected" : ""}`;
+  const imagePath = item && item.ImagePath ? item.ImagePath : null;
 
   return (
     <div className={cardClassName} onClick={handleClick} >
@@ -19,7 +40,7 @@ const Card1 = ({ item, handleClick, isSelected }) => {
             <h3>Generic Med: {item?.IntegrationWithModernMedicine}</h3>
           <hr></hr>
         </div>
-      <img src={item?.ImagePath} alt={item?.Name} /> 
+        {imagePath && <img src={imageMap[imagePath]} alt={item?.Name} />}
       </div>
     </div>
   );

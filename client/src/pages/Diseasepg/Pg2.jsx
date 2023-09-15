@@ -6,13 +6,7 @@ import "./Pg2.css";
 import Rightbar from "../../components/Rightbar/Rightbar";
 import Navbar from "../../components/Navbar/Navbar";
 import item1 from "../../images/item1.jpg"
-import item2 from "../../images/item2.jpg"
-import item3 from "../../images/item3.jpg"
-import item4 from "../../images/item4.jpg"
-import item5 from "../../images/item5.jpg"
-import item6 from "../../images/item6.jpg"
-import item7 from "../../images/item7.jpg"
-import item8 from "../../images/item8.jpg"
+
 export default function Pg2() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedItem, setSelectedItem] = useState(null);
@@ -51,7 +45,6 @@ export default function Pg2() {
             {searchTerm.length === 0
               ? renderCards(data)
               : renderCards(filteredData)}
-            
           </div>
           <Rightbar selectedItem={selectedItem} />
         </div>
