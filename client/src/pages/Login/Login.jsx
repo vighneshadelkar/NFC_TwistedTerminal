@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import loginimg from "../../images/login-img.jpg";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import "./Login.css";
 
@@ -134,7 +134,7 @@ export default function Login() {
 
             <p className="signup-link">
               No account?
-              {/* <a href="">Sign up</a> */}
+              <Link to={"/signup"}>Signup</Link>
             </p>
           </form>
         </div>
