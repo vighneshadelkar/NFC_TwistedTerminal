@@ -5,8 +5,8 @@ import Home from "./pages/Home/Home";
 import Pg2 from "./pages/Diseasepg/Pg2";
 import Login from "./pages/Login/Login";
 import { AuthContext } from "./context/AuthContext";
-import Navbar from "./components/Navbar/Navbar";
 import Signup from "./pages/Login/Signup";
+import Education from "./pages/Education/Education";
 
 function App() {
 
@@ -29,6 +29,7 @@ function App() {
             <Route exact path="/dis" element={<Pg2 />}></Route>
             <Route exact path="/login" element={<Login />}></Route>
             <Route exact path="/signup" element={<Signup />}></Route>
+            <Route exact path="/edu" element={<Education />}></Route>
           </Routes>
         </BrowserRouter>
       </AuthContext.Provider>
