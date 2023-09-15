@@ -2,6 +2,7 @@ import React from "react";
 import "./Education.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import Arrow from "../../images/arrow.png"
 
 export default function Education() {
   return (
@@ -20,6 +21,9 @@ export default function Education() {
               plants, diseases, and healing practices.
             </p>
           </div>
+          <div className="imgDiv">
+            <img src={Arrow} alt="" />
+          </div>
           <div className="textCards" data-aos="zoom-in-right">
             <h2>Compilation of Ayurvedic Texts</h2>
             <p>
@@ -30,6 +34,9 @@ export default function Education() {
               Sushruta, primarily deals with surgery and surgical techniques.
             </p>
           </div>
+          <div className="imgDiv">
+            <img src={Arrow} alt="" />
+          </div>
           <div className="textCards" data-aos="zoom-in-right">
             <h2>Golden Age of Ayurveda</h2>
             <p>
@@ -39,6 +46,9 @@ export default function Education() {
               study and practice of Ayurveda were established.
             </p>
           </div>
+          <div className="imgDiv">
+            <img src={Arrow} alt="" />
+          </div>
           <div className="textCards" data-aos="zoom-in-right">
             <h2>Revival and Modernization</h2>
             <p>
@@ -47,6 +57,9 @@ export default function Education() {
               Saraswati and Swami Dayananda Saraswati played a crucial role in
               promoting Ayurvedic education and practices.
             </p>
+          </div>
+          <div className="imgDiv">
+            <img src={Arrow} alt="" />
           </div>
           <div className="textCards" data-aos="zoom-in-right">
             <h2>Global Recognition and Integration</h2>

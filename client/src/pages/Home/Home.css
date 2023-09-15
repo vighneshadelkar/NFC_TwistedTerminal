@@ -15,7 +15,7 @@
     display: flex;
     /* background-color: rgb(242,254,251); */
     background-image: url("../../images/homepg.avif");
-    height: 35rem;
+    height: 33rem;
     background-size: cover;
     background-repeat: no-repeat;
 }
