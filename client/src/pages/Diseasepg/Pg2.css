@@ -1,8 +1,8 @@
 .pg2{
-    width: 100%;font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Titillium Web', sans-serif;
-    
+    margin: 6rem 6rem;
 }
 .pg2div{
     margin-top: 100px;
