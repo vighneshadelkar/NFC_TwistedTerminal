@@ -6,33 +6,25 @@ body {
     background-color: rgba(247,248,243,255);
     letter-spacing: 1px;
     font-family: Poppins;
-    /* transition:background-color .25s,color .25s; */
     color: rgba(50,126,94,255);
 }
 
 a{
     text-decoration: none;
-    /* color: black; */
     color: rgba(50,126,94,255);
 }
 li{
     list-style: none;
-
         padding: 8px 14px;
         margin-right: 30px;
         font-size: 115%;
         font-weight: 400;
         display: inline-block;
         border-radius: 2px;
-        /* background-color:rgb(242,254,251); */
-        /* background-color:rgba(222,238,217,255); */
         border-radius: 1rem;
-
-        /* position: relative; */
 }
 ul{
     list-style: none;
-    /* padding-top: 1rem; */
     margin-left: 2rem;
 }
 .navbar {
@@ -53,7 +45,6 @@ ul{
     width: 100%;
     z-index: 100;
     align-items: center;
-    /* justify-content: space-around; */
 }
 
 input,
@@ -62,12 +53,10 @@ button {
     font-size: 1.1rem;
     border: none;
     outline: none;
-    /* color: white; */
     background-color: transparent;
 }
 
 .navbar-logo{
-    /* padding: auto; */
     display: block;
     margin-left: 12rem;
     margin-top: 1rem;

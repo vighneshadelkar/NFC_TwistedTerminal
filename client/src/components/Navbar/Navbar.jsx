@@ -1,24 +1,26 @@
 import "./Navbar.css"
+import { NavLink } from "react-router-dom"
+import logo from "./mainlogo.jpg"
 
 export default function Navbar() {
   return (
     <nav className="navbar">
     <ul className="navbar-links">
       <li>
-        <a href="/">Home</a>
+        <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <a href="/about">About</a>
+        <NavLink to="/dis">About</NavLink>
       </li>
       <li>
-        <a href="/services">Services</a>
+        <NavLink to="/services">Services</NavLink>
       </li>
       <li>
-        <a href="/contact">Contact</a>
+        <NavLink to="/contact">Contact</NavLink>
       </li>
     </ul>
     <div className="navbar-logo">
-      <img src="./mainlogo.jpg" alt="logo" />
+      <img src={logo} alt="logo" />
     </div>
     <ul className="remix">
       <li>

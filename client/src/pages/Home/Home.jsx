@@ -1,10 +1,12 @@
 import React from 'react';
 import Homeimg from "../../images/home-img.jpg";
 import "./Home.css";
+import Navbar from '../../components/Navbar/Navbar';
 
 export default function Home() {
   return (
     <div className="home">
+        <Navbar/>
         <div className="homeWrapper">
             <section className="homeSection">
                 <div className="homeText">

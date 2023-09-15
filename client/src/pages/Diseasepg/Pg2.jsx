@@ -4,6 +4,7 @@ import data from "../../data/ayurveda";
 import Card1 from "../../components/Card/Card1";
 import "./Pg2.css";
 import Rightbar from "../../components/Rightbar/Rightbar";
+import Navbar from "../../components/Navbar/Navbar";
 
 export default function Pg2() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -11,7 +12,7 @@ export default function Pg2() {
 
   const handleSearch = (term) => {
     setSearchTerm(term);
-    setSelectedItem(null); 
+    setSelectedItem(null);
   };
 
   const handleCardClick = (item) => {
@@ -24,7 +25,7 @@ export default function Pg2() {
   );
 
   const renderCards = (items) => {
-    return items.map((item,index) => (
+    return items.map((item, index) => (
       <Card1
         key={index}
         item={item}
@@ -35,15 +36,17 @@ export default function Pg2() {
 
   return (
     <div className="pg2">
-      <Search handleSearch={handleSearch} />
-
-      <div className="pg2Wrapper">
-        <div className="cardsDiv">
-          {searchTerm.length === 0
-            ? renderCards(data)
-            : renderCards(filteredData)}
+      <Navbar/>
+      <div className="pg2div">
+        <Search handleSearch={handleSearch} />
+        <div className="pg2Wrapper">
+          <div className="cardsDiv">
+            {searchTerm.length === 0
+              ? renderCards(data)
+              : renderCards(filteredData)}
+          </div>
+          <Rightbar selectedItem={selectedItem} />
         </div>
-        <Rightbar selectedItem={selectedItem} />
       </div>
     </div>
   );

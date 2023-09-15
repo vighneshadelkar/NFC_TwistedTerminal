@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import Pg2 from "./pages/Diseasepg/Pg2";
 import Login from "./pages/Login/Login";
 import { AuthContext } from "./context/AuthContext";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
 
