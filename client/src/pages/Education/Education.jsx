@@ -1,6 +1,7 @@
 import React from "react";
 import "./Education.css";
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 export default function Education() {
   return (
@@ -9,7 +10,7 @@ export default function Education() {
       <div className="eduWrapper">
         <div className="text">
           <h1>History</h1>
-          <div className="textCards">
+          <div className="textCards" data-aos="zoom-in-right">
             <h2>Vedic Period</h2>
             <p>
               The origins of Ayurveda can be traced back to the Vedic period,
@@ -19,7 +20,7 @@ export default function Education() {
               plants, diseases, and healing practices.
             </p>
           </div>
-          <div className="textCards">
+          <div className="textCards" data-aos="zoom-in-right">
             <h2>Compilation of Ayurvedic Texts</h2>
             <p>
               The foundational texts of Ayurveda, known as the "Charaka Samhita"
@@ -29,7 +30,7 @@ export default function Education() {
               Sushruta, primarily deals with surgery and surgical techniques.
             </p>
           </div>
-          <div className="textCards">
+          <div className="textCards" data-aos="zoom-in-right">
             <h2>Golden Age of Ayurveda</h2>
             <p>
               During this period, Ayurveda saw significant advancements and
@@ -38,7 +39,7 @@ export default function Education() {
               study and practice of Ayurveda were established.
             </p>
           </div>
-          <div className="textCards">
+          <div className="textCards" data-aos="zoom-in-right">
             <h2>Revival and Modernization</h2>
             <p>
               Efforts were made to revive and modernize Ayurveda during the late
@@ -47,7 +48,7 @@ export default function Education() {
               promoting Ayurvedic education and practices.
             </p>
           </div>
-          <div className="textCards">
+          <div className="textCards" data-aos="zoom-in-right">
             <h2>Global Recognition and Integration</h2>
             <p>
               In recent decades, Ayurveda has gained international recognition,
@@ -58,6 +59,9 @@ export default function Education() {
           </div>
         </div>
       </div>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   );
 }

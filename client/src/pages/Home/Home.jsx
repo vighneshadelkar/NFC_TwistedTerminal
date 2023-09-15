@@ -21,7 +21,7 @@ export default function Home() {
             {/* <img src={Img1} alt="home img" className="homeimg"/> */}
           </div>
         </section>
-        <section className="homeSection2">
+        <section className="homeSection2" data-aos="zoom-in">
           <div className="wrapper">
             <div className="cdWrapper">
               <h1 className="homeTitle">

@@ -13,6 +13,13 @@ const Rightbar = ({ selectedItem }) => {
           <div className="selectedItem">
             <h3>Name: {selectedItem.Name}</h3>
             <p>Ayurveda Med: {selectedItem.AyurvedicRemedy}</p>
+            <h3>Medicinal Property:</h3>
+            <ul>
+              {Array.isArray(selectedItem?.PharmacologicalProperties) &&
+                selectedItem.PharmacologicalProperties.map((symptom, index) => (
+                  <li key={index}>{symptom}</li>
+                ))}
+            </ul>
             <h3>Symptoms:</h3>
             <ul>
               {Array.isArray(selectedItem?.Symptoms) &&

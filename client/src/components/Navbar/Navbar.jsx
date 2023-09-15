@@ -17,13 +17,16 @@ export default function Navbar() {
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink to="/dis">About</NavLink>
+        <NavLink to="/dis">Diseases</NavLink>
       </li>
       <li>
-        <NavLink to="/services">Services</NavLink>
+        <NavLink to="/services">Community</NavLink>
       </li>
       <li>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/edu">History</NavLink>
+      </li>
+      <li>
+        <NavLink to="https://abhinavgajria.github.io/ayurvedicquiz/">Game</NavLink>
       </li>
     </ul>
     <div className="navbar-logo">
