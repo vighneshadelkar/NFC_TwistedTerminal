@@ -16,7 +16,7 @@ const data = [
             "Analgesic"
         ],
         "IntegrationWithModernMedicine": "Turmeric can be used as a supplement alongside anti-arthritis medications for enhanced results. Nonsteroidal anti-inflammatory drugs (NSAIDs) can also be used for pain relief.",
-        "ImagePath":"../../../public/item1.jpg"
+        "ImagePath":"item1"
     },
     {
         "Name": "Asthma",
@@ -38,7 +38,7 @@ const data = [
         ],
         "IntegrationWithModernMedicine": "Bronchodilators, corticosteroids, and other prescribed asthma medications can be used alongside Ayurvedic remedies for asthma management."
         ,
-        "ImagePath":"../images/item1"
+        "ImagePath":"item8"
     },
     {
         "Name": "Hypertension",
@@ -60,7 +60,7 @@ const data = [
         ],
         "IntegrationWithModernMedicine": "Antihypertensive medications like ACE inhibitors and diuretics can be used alongside Ayurvedic remedies for blood pressure management."
         ,
-        "ImagePath":"../images/item1"
+        "ImagePath":"item2"
     },
     {
         "Name": "Diabetes",
@@ -82,7 +82,7 @@ const data = [
         ],
         "IntegrationWithModernMedicine": "Insulin or oral antidiabetic medications prescribed by a healthcare provider should be used alongside Ayurvedic remedies for diabetes management."
         ,
-        "ImagePath":"../images/item1"
+        "ImagePath":"item3"
     },
     {
         "Name": "Digestive Disorders",
@@ -105,7 +105,7 @@ const data = [
         ],
         "IntegrationWithModernMedicine": "Proton pump inhibitors (PPIs) and antacids can be used alongside Ayurvedic remedies for digestive relief."
         ,
-        "ImagePath":"../images/item1"
+        "ImagePath":"item4"
     },
     {
         "Name": "Migraines",
@@ -127,7 +127,7 @@ const data = [
         ],
         "IntegrationWithModernMedicine": "Triptans and nonsteroidal anti-inflammatory drugs (NSAIDs) can be used alongside Ayurvedic remedies for migraine relief."
         ,
-        "ImagePath":"../images/item1"
+        "ImagePath":".item5"
     },
     {
         "Name": "Depression",
@@ -149,7 +149,7 @@ const data = [
         ],
         "IntegrationWithModernMedicine": "Selective serotonin reuptake inhibitors (SSRIs) or other antidepressant medications prescribed by a healthcare provider should be used alongside Ayurvedic remedies for depression management."
         ,
-        "ImagePath":"../images/item1"
+        "ImagePath":"item6"
     },
     {
         "Name": "Anxiety",
@@ -172,7 +172,7 @@ const data = [
         ],
         "IntegrationWithModernMedicine": "Selective serotonin reuptake inhibitors (SSRIs) and anxiolytic medications can be used alongside Ayurvedic remedies for anxiety management."
         ,
-        "ImagePath":"../images/item1"
+        "ImagePath":"item7"
     },
     {
         "Name": "Insomnia",

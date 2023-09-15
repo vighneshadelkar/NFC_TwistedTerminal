@@ -1,6 +1,7 @@
 import React from "react";
 import "./Card1.css";
 
+
 const Card1 = ({ item, handleClick, isSelected }) => {
   const cardClassName = `cardContainer ${isSelected ? "selected" : ""}`;
 
@@ -18,7 +19,7 @@ const Card1 = ({ item, handleClick, isSelected }) => {
             <h3>Generic Med: {item?.IntegrationWithModernMedicine}</h3>
           <hr></hr>
         </div>
-      <img src="../../images/item1.jpg" alt={item?.Name} /> 
+      <img src={item?.ImagePath} alt={item?.Name} /> 
       </div>
     </div>
   );
