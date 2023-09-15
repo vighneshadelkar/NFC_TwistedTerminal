@@ -1,79 +1,51 @@
-import { useState } from "react";
-// import "./App.css";
+import React, { useState } from "react";
 
 function Chatbot() {
   const [message, setMessage] = useState("");
-  const [chats, setChats] = useState([]);
-  const [isTyping, setIsTyping] = useState(false);
+  const [output, setOutput] = useState("");
+  const [error, setError] = useState(null);
 
-  const chat = async (e, message) => {
+  const handleSendMessage = async (e) => {
+    console.log(JSON.stringify({ text: message }));
     e.preventDefault();
 
-    if (!message) return;
-    setIsTyping(true);
-    // scrollTo(0, 1e10);
-
-    let msgs = chats;
-    msgs.push({ role: "user", content: message });
-    setChats(msgs);
-
-    setMessage("");
-
-    fetch("http://localhost:8000", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        chats,
-      }),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        msgs.push(data.output);
-        setChats(msgs);
-        setIsTyping(false);
-        // scrollTo(0, 1e10);
-      })
-      .catch((error) => {
-        console.log(error);
+    try {
+      const response = await fetch("http://localhost:5000/chatbot", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ chat: message }),
       });
+
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+
+      const data = await response.json();
+      setOutput(data.reply);
+    } catch (error) {
+      setError(error.message);
+    }
   };
 
   return (
-    <main>
-      <h1>FullStack Chat AI Tutorial</h1>
+    <div>
+      <h1>Chatbot</h1>
 
-      <section>
-        {chats && chats.length
-          ? chats.map((chat, index) => (
-              <p key={index} className={chat.role === "user" ? "user_msg" : ""}>
-                <span>
-                  <b>{chat.role.toUpperCase()}</b>
-                </span>
-                <span>:</span>
-                <span>{chat.content}</span>
-              </p>
-            ))
-          : ""}
-      </section>
-
-      <div className={isTyping ? "" : "hide"}>
-        <p>
-          <i>{isTyping ? "Typing" : ""}</i>
-        </p>
-      </div>
-
-      <form action="" onSubmit={(e) => chat(e, message)}>
+      <form onSubmit={handleSendMessage}>
         <input
           type="text"
-          name="message"
           value={message}
-          placeholder="Type a message here and hit Enter..."
           onChange={(e) => setMessage(e.target.value)}
         />
+        <button type="submit">Send</button>
       </form>
-    </main>
+
+      {output && <div>Reply: {output}</div>}
+
+      {error && <div>Error: {error}</div>}
+    </div>
   );
 }
 

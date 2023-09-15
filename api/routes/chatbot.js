@@ -1,30 +1,41 @@
 const express = require('express');
 const Chatbot = express.Router();
-const { Configuration, OpenAIApi } = require('openai');
+const OpenAI = require('openai');
 
-const configuration = new Configuration({
-    organization: "org-0nmrFWw6wSm6xIJXSbx4FpTw",
-    apiKey: "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",
+const openai = new OpenAI({
+    apiKey: "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"
 });
-const openai = new OpenAIApi(configuration);
 
 Chatbot.post("/", async (request, response) => {
-    const { chats } = request.body;
+    try {
+        const { chat } = request.body;
+        console.log(chat)
 
-    const result = await openai.createChatCompletion({
-        model: "gpt-3.5-turbo",
-        messages: [
-            {
-                role: "system",
-                content: "You are a EbereGPT. You can help with graphic design tasks",
-            },
-            ...chats,
-        ],
-    });
+        if (!chat) {
+            throw new Error('Missing chat message');
+        }
 
-    response.json({
-        output: result.data.choices[0].message,
-    });
+        const result = await openai.chat.completions.create({
+            model: "text-davinci-003",
+            messages: [{ "role": "user", "content": chat }],
+        });
+
+        response.json({
+            output: result.data.choices[0].message.content,
+        });
+
+
+    } catch (error) {
+        if (error instanceof OpenAI.APIError) {
+            console.error(error.status);  // e.g. 401
+            console.error(error.message); // e.g. The authentication token you passed was invalid...
+            console.error(error.code);  // e.g. 'invalid_api_key'
+            console.error(error.type);  // e.g. 'invalid_request_error'
+        } else {
+            // Non-API error
+            console.log(error);
+        }
+    }
 });
 
 module.exports = Chatbot;
