@@ -4,6 +4,7 @@ import Aos from "aos"
 import Home from "./pages/Home/Home";
 import Pg2 from "./pages/Diseasepg/Pg2";
 import Login from "./pages/Login/Login";
+import { AuthContext } from "./context/AuthContext";
 
 function App() {
 
@@ -12,14 +13,25 @@ function App() {
   }, []);
 
 
+  const [AuthUser, setAuthUser] = useState(null);
+  const [isLoggedIn, setisLoggedIn] = useState(false);
+
+  const userMemo = useMemo(() => ({ AuthUser, setAuthUser, isLoggedIn, setisLoggedIn }), [AuthUser, setAuthUser, isLoggedIn, setisLoggedIn]);
+
   return (
-    <BrowserRouter>
-      <Routes>
-      <Route exact path="/" element={<Home/>}></Route>
-      <Route exact path="/dis" element={<Pg2/>}></Route>
-      <Route exact path="/login" element={<Login/>}></Route>
-      </Routes>
-    </BrowserRouter>
+    <div className="App">
+      <AuthContext.Provider value={userMemo}>
+        <BrowserRouter>
+          <Routes>
+            <Route exact path="/" element={<Home />}></Route>
+            <Route exact path="/dis" element={<Pg2 />}></Route>
+            <Route exact path="/login" element={<Login />}></Route>
+          </Routes>
+        </BrowserRouter>
+      </AuthContext.Provider>
+
+    </div>
+
   );
 }
 

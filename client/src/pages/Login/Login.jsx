@@ -10,10 +10,10 @@ export default function Login() {
     password: "",
   });
 
-  //   const { AuthUser, setAuthUser, isLoggedIn, setisLoggedIn } =
-  //     useContext(AuthContext);
+  const { AuthUser, setAuthUser, isLoggedIn, setisLoggedIn } =
+    useContext(AuthContext);
 
-  //   const navigate = useNavigate();
+  const navigate = useNavigate();
 
   function handleInput(event) {
     const { name, value } = event.target;
@@ -25,38 +25,38 @@ export default function Login() {
     });
   }
 
-  //   const handleSubmit = async (e) => {
-  //     e.preventDefault();
-  //     console.log(loginData);
-  //     const res = await fetch("http://localhost:5000/auth/login", {
-  //       method: "POST",
-  //       mode: "cors",
-  //       body: JSON.stringify(loginData),
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //     });
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(loginData);
+    const res = await fetch("http://localhost:5000/auth/login", {
+      method: "POST",
+      mode: "cors",
+      body: JSON.stringify(loginData),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
 
-  //     const result = await res.json();
+    const result = await res.json();
 
-  //     if (!res.ok) {
-  //       setisLoggedIn(false);
-  //       console.error();
-  //     } else {
-  //       setAuthUser(result);
-  //       setisLoggedIn(true);
-  //       setloginData({
-  //         email: "",
-  //         password: "",
-  //       });
-  //     }
-  //   };
-
-  //   setTimeout(() => {
-  //     if (isLoggedIn) {
-  //       navigate("/profile");
-  //     }
-  //   }, 100);
+    if (!res.ok) {
+      setisLoggedIn(false);
+      console.error();
+    } else {
+      setAuthUser(result);
+      setisLoggedIn(true);
+      setloginData({
+        email: "",
+        password: "",
+      });
+    }
+  };
+  console.log(AuthUser);
+  setTimeout(() => {
+    if (isLoggedIn) {
+      navigate("/");
+    }
+  }, 100);
 
   return (
     <div className="loginContainer">
@@ -65,7 +65,7 @@ export default function Login() {
           <img src={loginimg} alt="login img" className="login-img" />
         </div>
         <div className="formContainer">
-          <form className="form">
+          <form className="form" onSubmit={handleSubmit}>
             <p className="form-title">Sign in to your account</p>
             <div className="input-container">
               <input
@@ -134,7 +134,7 @@ export default function Login() {
 
             <p className="signup-link">
               No account?
-              <a href="">Sign up</a>
+              {/* <a href="">Sign up</a> */}
             </p>
           </form>
         </div>
