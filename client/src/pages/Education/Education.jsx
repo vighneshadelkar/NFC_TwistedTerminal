@@ -10,7 +10,7 @@ export default function Education() {
       <Navbar />
       <div className="eduWrapper">
         <div className="text">
-          <h1>History</h1>
+          <h1 className="homeTitle">History</h1>
           <div className="textCards" data-aos="zoom-in-right">
             <h2>Vedic Period</h2>
             <p>
@@ -71,6 +71,10 @@ export default function Education() {
             </p>
           </div>
         </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
       </div>
       <footer>
         <Footer/>
