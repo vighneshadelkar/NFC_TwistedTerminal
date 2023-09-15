@@ -1,12 +1,14 @@
 import React from "react";
 import "./Rightbar.css";
+import Homeimg from "../../images/home-img.jpg";
 
 const Rightbar = ({ selectedItem }) => {
   console.log(selectedItem);
   return (
     <div className="rightbar">
       {selectedItem ? (
-        <>
+        <div className="card2">
+          <img src={Homeimg} alt="" className="rightbarImg" />
           <h2>Selected Item</h2>
           <div className="selectedItem">
             <h3>Name: {selectedItem.Name}</h3>
@@ -20,9 +22,9 @@ const Rightbar = ({ selectedItem }) => {
             </ul>
             <h3>Description:{selectedItem.IntegrationWithModernMedicine}</h3>
           </div>
-        </>
+        </div>
       ) : (
-        <>Rightbar</>
+        <img src={Homeimg} alt="" className="rightbarImg" />
       )}
     </div>
   );

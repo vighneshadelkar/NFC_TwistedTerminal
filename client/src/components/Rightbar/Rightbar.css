@@ -1,3 +1,15 @@
 .rightbar{
     flex: 3;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.rightbarImg{
+    border-radius: 20px;
+    height: 40vh;
+    width: 100%;
+}
+
+.card2{
+    width: 100%;
 }

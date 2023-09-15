@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Search.css"
 
 const Search= ({ handleSearch }) => {
   return (
@@ -7,6 +8,7 @@ const Search= ({ handleSearch }) => {
         type="text"
         placeholder="Search..."
         onChange={(e) => handleSearch(e.target.value)}
+        className='search'
       />
     </div>
   );
