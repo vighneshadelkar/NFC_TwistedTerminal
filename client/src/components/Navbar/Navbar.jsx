@@ -25,6 +25,9 @@ export default function Navbar() {
           <NavLink to="/videos">Videos</NavLink>
         </li>
         <li>
+          <NavLink to="/products">Products</NavLink>
+        </li>
+        <li>
           <NavLink to="https://abhinavgajria.github.io/ayurvedicquiz/">
             Game
           </NavLink>
