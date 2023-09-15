@@ -8,7 +8,7 @@ export default function Video() {
     <div className="videoContainer">
       <Navbar />
       <div className="videoWrapper">
-        <h2>Videos</h2>
+        <h2 className="homeTitle">Videos</h2>
         <div className="videos">
           <div className="video">
             <iframe
@@ -54,7 +54,10 @@ export default function Video() {
               allowfullscreen
             ></iframe>
           </div>
+          
         </div>
+        <br></br>
+        <br></br>
       </div>
       <footer>
         <Footer/>
