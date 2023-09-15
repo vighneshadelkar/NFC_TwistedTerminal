@@ -67,7 +67,7 @@ export default function Signup() {
         </div>
         <div className="formContainer">
           <form className="form" onSubmit={handleSubmit}>
-            <p className="form-title">Sign in to your account</p>
+            <p className="form-title">Sign up to your account</p>
             <div className="input-container">
               <input
                 type="text"
