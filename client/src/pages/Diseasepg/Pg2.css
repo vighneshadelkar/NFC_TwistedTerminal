@@ -1,5 +1,7 @@
 .pg2{
-    width: 100%;
+    width: 100%;font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 .pg2Wrapper{
     display: flex;
