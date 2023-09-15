@@ -1,5 +1,7 @@
 import React from "react";
 import Homeimg from "../../images/home-img.jpg";
+import Img1 from "../../images/login-img.jpg";
+import Arrow from "../../images/arrow.png"
 import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
@@ -17,10 +19,13 @@ export default function Home() {
             <button className="explore">Explore More</button>
           </div>
           <div className="imgDiv">
-            <img src={Homeimg} alt="home img" />
+            {/* <img src={Img1} alt="home img" className="homeimg"/> */}
           </div>
         </section>
-        <section className="homeSection2">
+        <div className="imgDiv">
+            <img src={Arrow} alt="" />
+          </div>
+        <section className="homeSection2" data-aos="zoom-in">
           <div className="wrapper">
             <div className="cdWrapper">
               <h1 className="homeTitle">

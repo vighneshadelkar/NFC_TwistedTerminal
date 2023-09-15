@@ -1,8 +1,7 @@
 .rightbar{
     flex: 3;
     padding: 10px;
-    overflow-y: auto;
-    /* margin-right: 40px; */
+    height: 100vh;
 }
 
 .rightbarImg{
