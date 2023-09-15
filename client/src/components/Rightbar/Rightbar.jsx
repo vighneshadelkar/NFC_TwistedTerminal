@@ -7,7 +7,7 @@ const Rightbar = ({ selectedItem }) => {
   return (
     <div className="rightbar">
       {selectedItem ? (
-        <div className="card">
+        <div className="card2">
           <img src={Homeimg} alt="" className="rightbarImg" />
           <h2>Selected Item</h2>
           <div className="selectedItem">
