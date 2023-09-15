@@ -15,6 +15,7 @@ export default function Home() {
                     <img src={Homeimg} alt="home img"  />
                 </div>
             </section>
+            
         </div>
     </div>
   )
