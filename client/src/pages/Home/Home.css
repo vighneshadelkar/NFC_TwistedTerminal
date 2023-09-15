@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Roboto&family=Titillium+Web:wght@200&display=swap');
+
+.home{
+    width: 100%;
+    background-color: rgb(242,254,251);
+    padding: 10px;
+    opacity: 1;
+}
+
+.homeSection{
+    display: flex;
+}
+
+.imgDiv{
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 6.5;
+}
+
+.homeTitle{
+    font-size: 50px;
+    font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+}
+
+.homeText{
+    padding: 20px;
+    flex: 5.5;
+}
+
+.explore{
+    background-color: rgb(126,181,60);
+    border: 0px;
+    padding: 20px;
+    font-size: larger;
+    color: white;
+    border-radius: 15px;
+}
