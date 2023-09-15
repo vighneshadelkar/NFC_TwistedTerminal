@@ -1,6 +1,5 @@
 .pg2{
     width: 100%;
-    padding: 10px;
 }
 .pg2Wrapper{
     display: flex;
@@ -12,6 +11,7 @@
     gap: 10px;
     overflow-y: scroll;
     height: 100%;
+    margin-right: 0px;
     /* justify-content: space-around;  */
 }
 
