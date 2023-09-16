@@ -45,7 +45,7 @@ function Chatbot() {
   return (
     <div className="chatbot">
       <div className="chatbotWrapper">
-        <h1>Chatbot</h1>
+        <h1>AyuBot</h1>
         <form onSubmit={handleSendMessage}>
           <input
             type="text"
