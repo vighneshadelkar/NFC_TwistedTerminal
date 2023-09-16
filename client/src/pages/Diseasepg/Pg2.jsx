@@ -41,7 +41,7 @@ export default function Pg2() {
       <div className="pg2div">
         <Search handleSearch={handleSearch} />
         <div className="pg2Wrapper">
-          <div className="cardsDiv">
+          <div className="cardsDiv2">
             {searchTerm.length === 0
               ? renderCards(data)
               : renderCards(filteredData)}
