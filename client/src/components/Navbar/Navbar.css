@@ -27,6 +27,17 @@ li{
         /* background-color: #deeed9; */
         border-radius: 1rem;
 }
+
+a:after{
+    display: block;
+    content:'';
+    border-bottom: solid 3px rgba(50,126,94,255);
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+a:hover::after{
+    transform: scaleX(1);
+}
 ul{
     list-style: none;
     margin-left: 1rem;

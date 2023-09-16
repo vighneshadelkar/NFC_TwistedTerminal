@@ -4,9 +4,12 @@
     background-color: white;
     box-shadow: 0px 0px 10px rgb(170, 170, 170);
     width: 100%;
-    border: 1px solid;
+    border: 1.5px solid #69edb6;
 }
 
+hr{
+    color: #95f1cb;
+}
 .cardContainer{
     width: 100%;
 }

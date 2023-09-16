@@ -69,3 +69,19 @@
     width: 100%;
     
 }
+.cd{
+    display: flex;
+    width: 30rem;
+}
+.logi{
+    height: 5rem;
+    margin-top: 1.2rem;
+    margin-right: 1rem;
+}
+.logg{
+    height: 5rem;
+    border: 2.5px solid  rgba(50,126,94,255);
+    margin-top: 1.2rem;
+    margin-right: 1rem;
+    border-radius: 10rem;
+}
