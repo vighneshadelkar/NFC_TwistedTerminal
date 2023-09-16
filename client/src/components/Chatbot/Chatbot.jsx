@@ -8,6 +8,12 @@ function Chatbot() {
   const [error, setError] = useState(null);
   const [isTyping, setIsTyping] = useState(false);
 
+  function handleClick(msg,e)
+  {
+
+    setMessage(msg);
+  }
+
   const handleSendMessage = async (e) => {
     console.log(JSON.stringify({ text: message }));
     setIsTyping(true);
@@ -55,7 +61,7 @@ function Chatbot() {
             <i>{isTyping ? "Typing" : ""}</i>
           </p>
         </div>
-        <section>
+        <section className="center">
           {output && output.length
             ? output.map((chat, index) => (
                 <p key={index} className={chat ? "output" : ""}>
@@ -69,7 +75,22 @@ function Chatbot() {
                   <span>{chat}</span>
                 </p>
               ))
-            : ""}
+            : <>
+            <div className="suggestions">
+              <div className="output" onClick={()=>handleClick('List some ayurvedic medicine')}>
+                <span>List some ayurvedic medicine</span>
+              </div>
+              <div className="output" onClick={()=>handleClick('Origins of ayurveda')}>
+                <span>Origins of ayurveda</span>
+              </div>
+              <div className="output" onClick={()=>handleClick('Can you recommend natural remedies for headaches?')}>
+                <span>Can you recommend natural remedies for headaches?</span>
+              </div>
+              <div className="output" onClick={()=>handleClick('What are some common herbs used in Ayurvedic medicine?')}>
+                <span>What are some common herbs used in Ayurvedic medicine?</span>
+              </div>
+            </div>
+            </>}
         </section>
 
         {error && <div className="error">Error: {error}</div>}

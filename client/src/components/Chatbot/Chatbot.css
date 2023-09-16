@@ -3,6 +3,7 @@
     border-radius: 20px;
     padding: 20px;
     font-size: larger;
+    width: 80%;
 }
 
 .chatbot{
@@ -15,7 +16,19 @@
 
 .chatbotWrapper{
     margin-top: 100px;
-    width: 50%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.suggestions{
+    display: flex;
+    gap: 10px;
+}
+
+.center{
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -13,7 +13,7 @@ export default function Navbar() {
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/dis">Diseases</NavLink>
+          <NavLink to="/dis">Remedies</NavLink>
         </li>
         <li>
           <NavLink to="https://globalchat3232.netlify.app/">Community</NavLink>
