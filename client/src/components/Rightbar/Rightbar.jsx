@@ -1,6 +1,6 @@
 import React from "react";
 import "./Rightbar.css";
-import Homeimg from "../../images/home-img.jpg";
+import Homeimg from "../../images/diss.jpg";
 import item1 from "../../images/item1.jpg"
 import item2 from "../../images/item2.jpg"
 import item3 from "../../images/item3.jpg"
