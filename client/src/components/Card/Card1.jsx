@@ -38,9 +38,9 @@ const Card1 = ({ item, handleClick, isSelected }) => {
               <p key={index}>{symptom}</p>
             ))}
             <h3>Generic Med: {item?.IntegrationWithModernMedicine}</h3>
+        {imagePath && <img src={imageMap[imagePath]} alt={item?.Name} />}
           <hr></hr>
         </div>
-        {imagePath && <img src={imageMap[imagePath]} alt={item?.Name} />}
       </div>
     </div>
   );
