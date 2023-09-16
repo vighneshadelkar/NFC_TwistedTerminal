@@ -3,7 +3,6 @@ import Navbar from "../../components/Navbar/Navbar";
 import Pdcard from "../../components/Card/Pdcard";
 import products from "../../data/products";
 import Search from "../../components/Search/Search";
-import Rightbar from "../../components/Rightbar/Rightbar"
 import "./Product.css";
 import Chatbot from "../../components/Chatbot/Chatbot";
 
@@ -37,17 +36,7 @@ export default function Products() {
     <div className="proContainer">
       <Navbar />
       <div className="proWrapper">
-        <Search handleSearch={handleSearch} />
-
-        <div className="cardsDiv1">
-          <Chatbot/>
-          <div className="cardsDiv">
-            {searchTerm.length === 0
-              ? renderCards(products)
-              : renderCards(filteredData)}
-          </div>
-          <Rightbar/>
-        </div>
+        <Chatbot />
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ const Chatbot = express.Router();
 const OpenAI = require('openai');
 
 const openai = new OpenAI({
-    apiKey: "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"
+    apiKey: process.env.OPENAI_API_KEY
 });
 
 Chatbot.post("/", async (request, response) => {
@@ -16,23 +16,23 @@ Chatbot.post("/", async (request, response) => {
         }
 
         const result = await openai.chat.completions.create({
-            model: "text-davinci-003",
+            model: "gpt-3.5-turbo",
             messages: [{ "role": "user", "content": chat }],
+            max_tokens:100
         });
-
+        console.log(result.choices[0].message.content)
         response.json({
-            output: result.data.choices[0].message.content,
+            reply: result.choices[0].message.content,
         });
 
 
     } catch (error) {
         if (error instanceof OpenAI.APIError) {
-            console.error(error.status);  // e.g. 401
-            console.error(error.message); // e.g. The authentication token you passed was invalid...
-            console.error(error.code);  // e.g. 'invalid_api_key'
-            console.error(error.type);  // e.g. 'invalid_request_error'
+            console.error(error.status);  
+            console.error(error.message); 
+            console.error(error.code);  
+            console.error(error.type); 
         } else {
-            // Non-API error
             console.log(error);
         }
     }
