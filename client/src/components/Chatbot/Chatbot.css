@@ -1,0 +1,23 @@
+.output{
+    background-color: rgb(242,254,251);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: larger;
+}
+
+.chatbot{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatbotWrapper{
+    margin-top: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

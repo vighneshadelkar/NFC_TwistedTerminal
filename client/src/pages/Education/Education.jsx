@@ -39,7 +39,7 @@ export default function Education() {
           </div>
           <div className="textCards" data-aos="zoom-in-right">
             <h2>Golden Age of Ayurveda</h2>
-            <p>
+            <p className="data">
               During this period, Ayurveda saw significant advancements and
               flourishing. Notable commentaries and interpretations of earlier
               texts were written. Universities and institutions dedicated to the
@@ -51,7 +51,7 @@ export default function Education() {
           </div>
           <div className="textCards" data-aos="zoom-in-right">
             <h2>Revival and Modernization</h2>
-            <p>
+            <p className="data">
               Efforts were made to revive and modernize Ayurveda during the late
               19th and early 20th centuries. Scholars like Maharshi Dayanand
               Saraswati and Swami Dayananda Saraswati played a crucial role in
@@ -63,7 +63,7 @@ export default function Education() {
           </div>
           <div className="textCards" data-aos="zoom-in-right">
             <h2>Global Recognition and Integration</h2>
-            <p>
+            <p className="data">
               In recent decades, Ayurveda has gained international recognition,
               with practitioners and enthusiasts around the world. Ayurvedic
               principles, herbal remedies, and lifestyle practices have been

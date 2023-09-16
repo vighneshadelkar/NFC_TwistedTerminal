@@ -1,5 +1,7 @@
 .eduContainer{
     margin-top: 100px;
+    width: 100%;
+    height: 100vh;
 }
 
 .textCards{
@@ -9,6 +11,8 @@
     align-items: center;
     width: 50%;
     margin-top: 0px;
+    
+    opacity: 0.1;
 }
 
 .text{
@@ -18,4 +22,8 @@
     align-items: center;
     width: 100%;
     gap: 30px;
+}
+
+.data{
+    font-weight: bolder;
 }
