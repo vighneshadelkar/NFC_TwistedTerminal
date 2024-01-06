@@ -15,9 +15,9 @@ export default function Navbar() {
         <li>
           <NavLink to="/dis">Remedies</NavLink>
         </li>
-        <li>
-          <NavLink to="https://globalchat3232.netlify.app/">Community</NavLink>
-        </li>
+        {/* <li> */}
+          {/* <NavLink to="https://globalchat3232.netlify.app/">Community</NavLink> */}
+        {/* </li> */}
         <li>
           <NavLink to="/edu">History</NavLink>
         </li>
