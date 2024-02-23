@@ -52,7 +52,7 @@ function Chatbot() {
             value={message}
             placeholder="enter your message"
             className="search"
-            onChange={(e) => setMessage(e.target.value)}
+            onChange={(e) => setMessage("In context of ayurveda"+e.target.value)}
           />
           <button type="submit">Send</button>
         </form>
