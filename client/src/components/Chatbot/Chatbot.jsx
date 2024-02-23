@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Chatbot.css";
+import URI from '../../URI'
 
 function Chatbot() {
   const [message, setMessage] = useState("");
@@ -20,7 +21,7 @@ function Chatbot() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/chatbot", {
+      const response = await fetch(URI+"chatbot", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

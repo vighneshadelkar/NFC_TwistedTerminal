@@ -3,6 +3,7 @@ import loginimg from "../../images/login-img.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import "./Signup.css";
+import URI from '../../URI'
 
 export default function Signup() {
   const navigate = useNavigate();
@@ -29,7 +30,7 @@ export default function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("http://localhost:5000/auth/register", {
+    const res = await fetch(URI+"auth/register", {
       method: "POST",
       body: JSON.stringify(registerData),
       headers: {

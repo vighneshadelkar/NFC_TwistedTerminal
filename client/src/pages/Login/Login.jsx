@@ -3,6 +3,7 @@ import loginimg from "../../images/login-img.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import "./Login.css";
+import URI from '../../URI'
 
 export default function Login() {
   const [loginData, setloginData] = useState({
@@ -28,7 +29,7 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(loginData);
-    const res = await fetch("http://localhost:5000/auth/login", {
+    const res = await fetch(URI+"auth/login", {
       method: "POST",
       mode: "cors",
       body: JSON.stringify(loginData),
