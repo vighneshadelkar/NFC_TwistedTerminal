@@ -28,6 +28,7 @@ Chatbot.post("/", async (request, response) => {
 
     } catch (error) {
         if (error instanceof OpenAI.APIError) {
+            response.status(500).json({err:error})
             console.error(error.status);  
             console.error(error.message); 
             console.error(error.code);  
