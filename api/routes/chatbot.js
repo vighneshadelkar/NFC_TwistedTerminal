@@ -17,7 +17,7 @@ Chatbot.post("/", async (request, response) => {
 
         const result = await openai.chat.completions.create({
             model: "gpt-3.5-turbo",
-            messages: [{ "role": "user", "content": chat }],
+            messages: [{ "role": "user", "content": "In context of Ayurveda"+chat }],
             max_tokens:100
         });
         console.log(result.choices[0].message.content)
